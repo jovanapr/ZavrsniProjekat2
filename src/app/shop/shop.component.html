@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <!-- prikazi svaki element liste categories. categories lista je definisana u Shop komponenti. 
+            Na klik neke od kategorija iz categories liste pozovi showCategoryProducts funkciju i prosledi joj id te komponente -->
+        <div class="col-3 px-1 mt-2 text-center" (click)="showCategoryProducts(category.id)"
+            *ngFor="let category of categories">
+            <p class="px-1">{{category.name}}</p>
+            <img class="category w-50" src={{category.image}}>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 d-flex justify-content-center">
+            <div class="line w-50"></div>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <div class="line w-50"></div>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <div class="line w-50"></div>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+            <div class="line w-50"></div>
+        </div>
+    </div>
+
+    <!-- Prikazi Category komponentu ako je showCategory varijabla Shop komponente setovana na true.
+        Dodatno, setuj vrednost categoryID varijable za Category komponentu na vrednost categoryIDToShow varijable Shop komponente-->
+    <app-category *ngIf="showCategory" [categoryID]="categoryIDToShow"></app-category>
+
+</div>
