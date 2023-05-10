@@ -7,6 +7,9 @@ export class CategoryService {
 
   simpathyCategoryID = 1;
   anniversaryCategoryID = 2;
+  congrulationsCategoryID = 3;
+  getWellCategoryID = 4;
+
 
   products: { id: number, categoryID: number, image: string, name: string, price: number }[] = [
     {
@@ -88,10 +91,108 @@ export class CategoryService {
     },
     {
       id: 11,
-      categoryID: this.anniversaryCategoryID,
+      categoryID: this.simpathyCategoryID,
       image: "../../assets/products/simpathy/product12.PNG",
       name: "Sunshine & Joy Garden",
       price: 65
+    },
+    {
+      id: 12,
+      categoryID: this.anniversaryCategoryID,
+      image: "../../assets/products/anniversary/product18.PNG",
+      name: "Truly Stunning Bouquet",
+      price: 108
+    },
+    {
+      id: 13,
+      categoryID: this.anniversaryCategoryID,
+      image: "../../assets/products/anniversary/product19.PNG",
+      name: "You're Precious Bouquet",
+      price: 90
+    },
+    {
+      id: 14,
+      categoryID: this.anniversaryCategoryID,
+      image: "../../assets/products/anniversary/product20.PNG",
+      name: "Long Stem Red Rose Bouquet",
+      price: 200
+    },
+    {
+      id: 15,
+      categoryID: this.anniversaryCategoryID,
+      image: "../../assets/products/anniversary/product21.PNG",
+      name: "Pretty in Pink Belgian Chocolate Truffles",
+      price: 45
+    },
+    {
+      id: 16,
+      categoryID: this.anniversaryCategoryID,
+      image: "../../assets/products/anniversary/product22.PNG",
+      name: "Valentine's Day Belgian Chocolate Covered Treat Sampler",
+      price: 45
+    },
+    {
+      id: 17,
+      categoryID: this.congrulationsCategoryID,
+      image: "../../assets/products/congrulations/product23.PNG",
+      name: "Bliss White Orchid",
+      price: 68
+    },
+    {
+      id: 18,
+      categoryID: this.congrulationsCategoryID,
+      image: "../../assets/products/congrulations/product24.PNG",
+      name: "CLASSIC WHITE CALLA LILY",
+      price: 58
+    },
+    {
+      id: 19,
+      categoryID: this.congrulationsCategoryID,
+      image: "../../assets/products/congrulations/product25.PNG",
+      name: "SPRING FLING TULIP BULB GARDEN",
+      price: 45
+    },
+    {
+      id: 20,
+      categoryID: this.congrulationsCategoryID,
+      image: "../../assets/products/congrulations/product26.PNG",
+       name: "CONGRATS BELGIAN CHOCOLATE COVERED BERRY-GRAM",
+      price: 55
+    },
+    {
+      id: 21,
+      categoryID: this.getWellCategoryID,
+      image: "../../assets/products/get-well/product13.PNG",
+      name: "Fiesta Bouquet",
+      price: 95
+    },
+    {
+      id: 22,
+      categoryID: this.getWellCategoryID,
+      image: "../../assets/products/get-well/product14.PNG",
+      name: "Alluring Elegance Bouquet",
+      price: 115
+    },
+    {
+      id: 23,
+      categoryID: this.getWellCategoryID,
+      image: "../../assets/products/get-well/product15.PNG",
+      name: "Beyond Blue Bouquet",
+      price: 92
+    },
+    {
+      id: 24,
+      categoryID: this.getWellCategoryID,
+      image: "../../assets/products/get-well/product16.PNG",
+      name: "Clear Skies Bouquet",
+      price: 135
+    },
+    {
+      id: 25,
+      categoryID: this.getWellCategoryID,
+      image: "../../assets/products/get-well/product17.PNG",
+      name: "Light of My Life Bouquet",
+      price: 80
     },
 
   ]

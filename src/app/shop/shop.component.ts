@@ -26,7 +26,7 @@ export class ShopComponent implements OnInit {
   showCategoryProducts(categoryID: number){   
     // categeoryIDToShow Shop komponente setuj na vrednost categoryID parametra koji je prosledjen iz HTML-a
     this.categoryIDToShow = categoryID;
-    // setuj showCategory na true kako bi se Categories komponenta prikazala unutar Shop komponente
+    // setuje showCategory na true kako bi se Categories komponenta prikazala unutar Shop komponente
     this.showCategory = true;
   }
 }

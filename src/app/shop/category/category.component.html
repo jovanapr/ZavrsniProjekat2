@@ -1,7 +1,9 @@
 <div class="row">
-    <div class="col-4 px-1 mt-2 text-center" (click)="showProductDetail(product.id)" *ngFor="let product of products">
-        <img class="w-100" src={{product.image}}>
-        <p class="px-1">{{product.name}}</p>
-        <p>{{product.price}}$</p>
+    
+    <div class="col-lg-4 col-md-6 col-sm-12 px-1 mt-3 text-center" (click)="showProductDetail(product.id)" *ngFor="let product of products">
+        <img class="w-75" src={{product.image}}>
+        <p class="pt-1 mb-0 category-text">{{product.name}}</p>
+        <p class="category-price mt-0">{{product.price}}$</p>
+        
     </div>
 </div>

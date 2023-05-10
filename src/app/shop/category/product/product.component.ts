@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  product: { id: number, image: string, name: string, price: number };
+  product: { id: number, image: string, name: string, price: number, details:string };
 
   constructor(
     private  productService: ProductService,
@@ -17,6 +17,8 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     let id = this.route.snapshot.params['id'];
+    
+    
     this.product = this.productService.getProduct(id)[0];
   }
 }

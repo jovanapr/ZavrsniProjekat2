@@ -1,1 +1,21 @@
-<p>"{{ product.name }}"</p>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-8 col-sm-12 d-lg-flex">
+            <div>
+            <img class="h-50 mt-5" src={{product.image}}>
+                </div>
+                <div class="mt-5 px-2">
+            <h6 class="mb-0">{{product.name}}</h6>
+            <h6 class="mt-0">{{product.price}}$</h6>
+            <p class="details">{{product.details}}</p>
+            <hr class="mb-0">
+            <label class="mt-0" for="quantity">Quantity</label><br>
+            <input type="text" id="quantity" name="quantity"><br>
+            <button class="mt-1 bg-dark text-light border-0 rounded btn" type="button">Add to cart</button>
+
+        </div>
+        
+    </div>
+    
+</div>
+
